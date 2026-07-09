@@ -36,3 +36,30 @@ nav a{margin-left:18px;color:var(--text);text-decoration:none}
   .hero h1{font-size:2.4rem}
   nav{display:none}
 }
+.image-card{
+  background: var(--panel);
+  padding: 0;
+  border: 1px solid #eadfce;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.image-card img{
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.hero-card.image-card{
+  min-height: 520px;
+}
+
+.hero-card.image-card img{
+  min-height: 520px;
+}
+
+.masonry .image-card{
+  break-inside: avoid;
+  margin-bottom: 20px;
+}
