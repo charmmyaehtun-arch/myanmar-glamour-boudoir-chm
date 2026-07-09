@@ -1,0 +1,38 @@
+
+:root{
+  --bg:#f7f2eb; --text:#1a1715; --muted:#6d5a4d; --gold:#c8a96b; --dark:#111111; --panel:#fffaf4;
+}
+*{box-sizing:border-box} body{margin:0;font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+h1,h2,h3{font-family:Georgia,'Times New Roman',serif;line-height:1.15;margin:0 0 .6rem}
+.site-header{display:flex;justify-content:space-between;align-items:center;padding:20px 6vw;border-bottom:1px solid #e7dccf;position:sticky;top:0;background:rgba(247,242,235,.95);backdrop-filter:blur(8px)}
+.logo{font-weight:700}
+nav a{margin-left:18px;color:var(--text);text-decoration:none}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;padding:70px 6vw;align-items:center}
+.hero h1{font-size:3.4rem}
+.lead{font-size:1.1rem;color:var(--muted);max-width:760px}
+.eyebrow{letter-spacing:.12em;text-transform:uppercase;color:var(--gold);font-size:.85rem}
+.buttons{display:flex;gap:14px;margin-top:24px}
+.btn{display:inline-block;padding:12px 18px;border:1px solid var(--dark);text-decoration:none;color:var(--text);border-radius:999px}
+.btn.primary{background:var(--dark);color:#fff}
+.section,.page{padding:64px 6vw}
+.alt{background:#efe6db}
+.section-copy{max-width:860px;color:var(--muted)}
+.grid{display:grid;gap:24px;margin-top:24px}
+.grid.two{grid-template-columns:repeat(2,1fr)}
+.grid.three{grid-template-columns:repeat(3,1fr)}
+.grid.four{grid-template-columns:repeat(4,1fr)}
+.card,.collection,.collection-block{background:var(--panel);padding:22px;border:1px solid #eadfce;border-radius:18px}
+.placeholder{min-height:220px;border-radius:18px;border:1px dashed #cbb9a3;background:linear-gradient(135deg,#f4e8d9,#ead8c5);display:flex;align-items:center;justify-content:center;color:#7d6756}
+.placeholder.tall{min-height:320px}.placeholder.wide{min-height:260px}
+.hero-card{min-height:520px}
+.collection-block{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:24px}
+.masonry{columns:3 260px;column-gap:20px}
+.masonry .placeholder{break-inside:avoid;margin-bottom:20px;min-height:260px}
+.page.narrow{max-width:900px;margin:0 auto}
+.site-footer{padding:28px 6vw;border-top:1px solid #e7dccf;color:var(--muted)}
+.contact-list{padding-left:18px}
+@media (max-width: 900px){
+  .hero,.grid.two,.grid.three,.grid.four,.collection-block{grid-template-columns:1fr}
+  .hero h1{font-size:2.4rem}
+  nav{display:none}
+}
