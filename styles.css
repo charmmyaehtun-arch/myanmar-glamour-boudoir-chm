@@ -32,9 +32,39 @@ nav a{margin-left:18px;color:var(--text);text-decoration:none}
 .site-footer{padding:28px 6vw;border-top:1px solid #e7dccf;color:var(--muted)}
 .contact-list{padding-left:18px}
 @media (max-width: 900px){
-  .hero,.grid.two,.grid.three,.grid.four,.collection-block{grid-template-columns:1fr}
-  .hero h1{font-size:2.4rem}
-  nav{display:none}
+  .hero,
+  .grid.two,
+  .grid.three,
+  .grid.four,
+  .collection-block{
+    grid-template-columns:1fr;
+  }
+
+  .hero h1{
+    font-size:2.4rem;
+  }
+
+  .site-header{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:12px;
+  }
+
+  nav{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    width:100%;
+  }
+
+  nav a{
+    margin-left:0;
+    font-size:14px;
+    padding:8px 10px;
+    border:1px solid #e7dccf;
+    border-radius:999px;
+    background:#fffaf4;
+  }
 }
 .image-card{
   background: var(--panel);
