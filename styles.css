@@ -93,3 +93,30 @@ nav a{margin-left:18px;color:var(--text);text-decoration:none}
   break-inside: avoid;
   margin-bottom: 20px;
 }
+/* MOBILE NAV FIX — force nav to show on phones */
+@media (max-width: 900px){
+  .site-header{
+    display:flex !important;
+    flex-direction:column !important;
+    align-items:flex-start !important;
+    gap:12px !important;
+  }
+
+  .site-header nav{
+    display:flex !important;
+    flex-wrap:wrap !important;
+    gap:10px !important;
+    width:100% !important;
+  }
+
+  .site-header nav a{
+    display:inline-block !important;
+    margin-left:0 !important;
+    font-size:14px !important;
+    padding:8px 10px !important;
+    border:1px solid #e7dccf !important;
+    border-radius:999px !important;
+    background:#fffaf4 !important;
+    text-decoration:none !important;
+  }
+}
